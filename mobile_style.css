@@ -1,4 +1,4 @@
-@media  (max-with: 600px){
+@media only screen and (max-width: 600px) {
   .home,
 .home * {
   box-sizing: border-box;
@@ -7,13 +7,13 @@
   display: flex;
   flex-direction: column;
   gap: 0px;
-  align-items: flex-start;
+  align-items: center;
   justify-content: flex-start;
   position: relative;
   overflow: hidden;
 }
 .navbar-2 {
-  background: var(--background-color-primary, #ffffff);
+  background: transparent;
   display: flex;
   flex-direction: column;
   gap: 0px;
@@ -21,7 +21,7 @@
   justify-content: flex-start;
   flex-shrink: 0;
   width: 375px;
-  position: relative;
+  position: absolute;
   overflow: hidden;
 }
 .container {
@@ -128,19 +128,21 @@
 .header-5 {
   background: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
   padding: 64px 20px 64px 20px;
-  display: flex;
+  display: flex
+;
   flex-direction: column;
   gap: 48px;
   align-items: flex-start;
-  justify-content: center;
+  justify-content: flex-end;
   flex-shrink: 0;
-  width: 375px;
-  height: 812px;
+  width: -webkit-fill-available;
+  height: 100vh;
   position: relative;
   overflow: hidden;
 }
 .column2 {
-  display: flex;
+  display: flex
+;
   flex-direction: column;
   gap: 24px;
   align-items: flex-start;
@@ -763,6 +765,7 @@
   align-self: stretch;
   flex-shrink: 0;
   position: relative;
+  width: auto;
 }
 .address {
   color: var(--text-primary, #000000);
