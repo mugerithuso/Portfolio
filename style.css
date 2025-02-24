@@ -35,7 +35,7 @@
   gap: 32px;
   align-items: center;
   justify-content: center;
-  align-self:center; 
+  align-self: center;
   flex-shrink: 0;
   position: relative;
 }
@@ -48,7 +48,6 @@
   flex: 6;
   position: relative;
   margin-right: auto;
-
 }
 .company-logo {
   flex-shrink: 0;
@@ -146,19 +145,7 @@
   flex-shrink: 0;
   position: relative;
 }
-.button2 {
-  color: var(--text-alternate, #ffffff);
-  text-align: left;
-  font-family: var(
-    --text-regular-normal-font-family,
-    "Roboto-Regular",
-    sans-serif
-  );
-  font-size: var(--text-regular-normal-font-size, 16px);
-  line-height: var(--text-regular-normal-line-height, 150%);
-  font-weight: var(--text-regular-normal-font-weight, 400);
-  position: relative;
-}
+
 .header-5 {
   background: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
   padding: 0px 64px 0px 64px;
@@ -241,6 +228,11 @@
   position: relative;
 }
 .button4 {
+  border-style: solid;
+  background-color: #e3f2fd;
+  border-color: var(--color-neutral-black, #000000);
+  border-width: 1px;
+  padding: 12px 24px 12px 24px;
   color: var(--text-primary, #000000);
   text-align: left;
   font-family: var(
@@ -286,7 +278,7 @@
   align-items: center;
   justify-content: flex-start;
   flex-shrink: 0;
-  width: 768px;
+  width: 100%;
   position: relative;
 }
 .tagline-wrapper {
@@ -447,7 +439,7 @@
   overflow: visible;
 }
 .layout-1 {
-  background: var(--background-color-primary,#E3F2FD);
+  background: var(--background-color-primary, #e3f2fd);
   padding: 112px 64px 112px 64px;
   display: flex;
   flex-direction: column;
@@ -558,7 +550,6 @@
   align-items: flex-start;
   justify-content: flex-start;
   flex-shrink: 0;
-  width: 768px;
   position: relative;
 }
 .tagline-wrapper2 {
@@ -681,7 +672,6 @@
   line-height: var(--text-regular-normal-line-height, 150%);
   font-weight: var(--text-regular-normal-font-weight, 400);
   position: relative;
-  width: 560px;
 }
 .tags {
   display: flex;
@@ -719,15 +709,15 @@
   font-weight: var(--text-small-semi-bold-font-weight, 600);
   position: relative;
 }
-.actions4 {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  align-items: flex-start;
-  justify-content: flex-start;
-  align-self: stretch;
-  flex-shrink: 0;
-  position: relative;
+.actions4 button {
+  background-color: #c8a0ee;
+  border-color: var(--color-neutral-black, #000000);
+  border-width: 1px;
+  padding: 8px 14px 8px 14px;
+}
+.actions4 button:hover {
+  background-color: #22d6ff;
+  border-color: var(--color-neutral-black, #ffffff);
 }
 .button8 {
   display: flex;
@@ -801,23 +791,10 @@
   align-items: flex-start;
   justify-content: flex-start;
   flex-shrink: 0;
-  width: 768px;
+  width: 100%;
   position: relative;
 }
-.button10 {
-  background: var(--color-neutral-black, #000000);
-  border-style: solid;
-  border-color: var(--color-neutral-black, #000000);
-  border-width: 1px;
-  padding: 12px 24px 12px 24px;
-  display: flex;
-  flex-direction: row;
-  gap: 8px;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  position: relative;
-}
+
 .footer-3 {
   background: var(--background-color-primary, #ffffff);
   padding: 80px 64px 80px 64px;
@@ -885,7 +862,7 @@
   position: relative;
   align-self: stretch;
 }
-.level-1-12-sample-st-sydney-nsw-2000 {
+.address-text {
   color: var(--text-primary, #000000);
   text-align: left;
   font-family: var(
@@ -1242,7 +1219,7 @@
 }
 /* ................................................. */
 .container {
-  position:absolute;
+  position: absolute;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -1363,5 +1340,5 @@ ul li a::before {
 }
 ul li a:hover::before {
   width: 100%;
-  filter: drop-shadow(0 0 25px var(--clr))
+  filter: drop-shadow(0 0 25px var(--clr));
 }
